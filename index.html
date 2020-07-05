@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="高效能延遲載入圖片" />
+        <meta property="og:description" content="為了提升用戶的加載頁面速度，我們可以使用延遲載入這個方法。當用戶打開頁面的時候，只需要載入進入到畫面中的資源，從而節省流量，提升加載速度。而用戶滾動到圖片佔用位置，瀏覽器才載入圖片資源。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <title>高效能延遲載入圖片</title>
+    </head>
+    <body>
+        <div id="main">
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-08-ms-ez8.jpg" data-index="1" />
+                <noscript><img src="images/mg-gundam-08-ms-ez8.jpg" data-index="1" /></noscript>
+                <h2>圖片 1</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/rg-gundam-unicorn-unicorn.jpg" data-index="2" />
+                <noscript><img src="images/rg-gundam-unicorn-unicorn.jpg" data-index="2" /></noscript>
+                <h2>圖片 2</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-aile-strike.jpg" data-index="3" />
+                <noscript><img src="images/mg-gundam-seed-aile-strike.jpg" data-index="3" /></noscript>
+                <h2>圖片 3</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-blitz.jpg" data-index="4" />
+                <noscript><img src="images/mg-gundam-seed-blitz.jpg" data-index="4" /></noscript>
+                <h2>圖片 4</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-buster.jpg" data-index="5" />
+                <noscript><img src="images/mg-gundam-seed-buster.jpg" data-index="5" /></noscript>
+                <h2>圖片 5</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-duel.jpg" data-index="6" />
+                <noscript><img src="images/mg-gundam-seed-duel.jpg" data-index="6" /></noscript>
+                <h2>圖片 6</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-freedom.jpg" data-index="7" />
+                <noscript><img src="images/mg-gundam-seed-freedom.jpg" data-index="7" /></noscript>
+                <h2>圖片 7</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/rg-gundam-seed-freedom.jpg" data-index="8" />
+                <noscript><img src="images/rg-gundam-seed-freedom.jpg" data-index="8" /></noscript>
+                <h2>圖片 8</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/rg-gundam-seed-destiny-destiny.jpg" data-index="9" />
+                <noscript><img src="images/rg-gundam-seed-destiny-destiny.jpg" data-index="9" /></noscript>
+                <h2>圖片 9</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-destiny-infinite-justice.jpg" data-index="10" />
+                <noscript><img src="images/mg-gundam-seed-destiny-infinite-justice.jpg" data-index="10" /></noscript>
+                <h2>圖片 10</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/mg-gundam-seed-destiny-strike-freedom.jpg" data-index="11" />
+                <noscript><img src="images/mg-gundam-seed-destiny-strike-freedom.jpg" data-index="11" /></noscript>
+                <h2>圖片 11</h2>
+            </article>
+            <article class="thumb">
+                <img class="lozad" data-src="images/rg-gundam-00-00-raiser.jpg" data-index="12" />
+                <noscript><img src="images/rg-gundam-00-00-raiser.jpg" data-index="12" /></noscript>
+                <h2>圖片 12</h2>
+            </article>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/lozad@1.15.0/dist/lozad.min.js" defer></script>
+        <script src="js/images.js" defer></script>
+    </body>
+</html>
